@@ -1,4 +1,6 @@
-﻿namespace LeaveManagement.Web.Data
+﻿using Microsoft.AspNetCore.Razor.TagHelpers;
+
+namespace LeaveManagement.Web.Data
 {
     public class LeaveType: BaseEntity
     {
