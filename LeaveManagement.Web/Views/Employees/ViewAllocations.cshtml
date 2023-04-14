@@ -48,10 +48,10 @@
         {
             <li class="list-group-item">
                 <div class="row">
-                    <div class="col"><h6>@allocation.LeaveType.Name</h6></div>
+                    <div class="col"><h6>@allocation.LeaveType?.Name</h6></div>
                     <div class="col">
                         <button type="button" class="badge bg-primary">
-                            Allocated Days <span class="badge  bg-secondary">@allocation.LeaveType.DefaultDays</span>
+                            Allocated Days <span class="badge  bg-secondary">@allocation.LeaveType?.DefaultDays</span>
                         </button>
                     </div>
                     <div class="col">
@@ -60,10 +60,10 @@
                         </button>
                     </div>
                     <div class="col">
-                        <button type="button" class="badge btn-warning" asp-action="EditAllocation" asp-route-id="@allocation.Id">
+                        <a class="badge btn-warning" asp-action="EditAllocation" asp-route-id="@allocation.Id">
                             <i class="fas fa-pencil-alt"></i>
                             Edit Allocation
-                        </button>
+                        </a>
                     </div>
                 </div>
             </li>
